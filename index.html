@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blog with Forms & Table</title>
+</head>
+<body>
+  <header>
+    <h1>My Simple Blog</h1>
+    <marquee direction="right">Welcome to my HTML-only Blog! 🚀</marquee>
+  </header>
+
+  <main>
+       <article>
+      <h2>About This Blog</h2>
+      <p>
+        This blog shows <b>bold</b>, <i>italic</i>, <u>underline</u>, and 
+        <mark>highlight</mark> text formatting.  
+      </p>
+      <blockquote>
+        “Learning never exhausts the mind.” – <cite title="Famous Italian polymath, painter, scientist, and inventor">Leonardo da Vinci</cite>
+      </blockquote>
+      <p>
+        You can also use short inline quotes like <q title="A famous proverb">Knowledge is power</q>.
+      </p>
+
+      <h2>Famous People</h2>
+<dl>
+  <dt title="Italian polymath: painter, scientist, inventor">Leonardo da Vinci</dt>
+  <dd>Painter of the Mona Lisa and The Last Supper.</dd>
+
+  <dt title="Theoretical physicist who developed the theory of relativity">Albert Einstein</dt>
+  <dd>Known for E = mc² and contributions to quantum mechanics.</dd>
+
+  <dt title="Pioneer in radioactivity research, Nobel Prize winner">Marie Curie</dt>
+  <dd>First woman to win a Nobel Prize, discovered Polonium and Radium.</dd>
+</dl>
+
+    </article>
+
+    <hr />
+
+    <section>
+      <h2>Feedback Form</h2>
+      <form action="#" method="post">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <p>
+            <label for="country">Select your country:</label>
+            <select id="country" name="country">
+              <option value="india">India</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+              <option value="japan">Japan</option>
+            </select>
+          </p>
+
+          <p>
+            <span>Choose your subscription:</span><br />
+            <label><input type="radio" name="plan" value="basic" checked /> Basic</label><br />
+            <label><input type="radio" name="plan" value="premium" /> Premium</label><br />
+            <label><input type="radio" name="plan" value="pro" /> Pro</label>
+          </p>
+
+          <p>
+            <span>Topics you like:</span><br />
+            <label><input type="checkbox" name="topic" value="html" /> HTML</label><br />
+            <label><input type="checkbox" name="topic" value="css" /> CSS</label><br />
+            <label><input type="checkbox" name="topic" value="javascript" /> JavaScript</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </p>
+      </form>
+    </section>
+
+    <hr />
+
+    <section>
+  <h2>Blog Table</h2>
+  <table border="1" cellpadding="10" cellspacing="0">
+    <caption><b>Post Overview</b></caption>
+    <thead>
+      <tr>
+        <th>Icon</th>
+        <th>Post Title</th>
+        <th>Author</th>
+        <th>Reference</th>
+        <th>Progress</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>❤️</td>
+        <td><a href="#">First Blog Post</a></td>
+        <td><b>Praveen</b></td>
+        <td><blockquote><q>HTML Basics</q></blockquote></td>
+        <td><progress value="90" max="100"></progress> 90%</td>
+      </tr>
+      <tr>
+        <td>😂</td>
+        <td><a href="#">Learning Forms</a></td>
+        <td><i>Praveen</i></td>
+        <td><blockquote>Forms are essential in web apps.</blockquote></td>
+        <td><progress value="70" max="100"></progress> 70%</td>
+      </tr>
+      <tr>
+        <td>⏬️</td>
+        <td><a href="#">Using Tables</a></td>
+        <td><u>Praveen</u></td>
+        <td><mark>Tables organize data</mark></td>
+        <td><progress value="50" max="100"></progress> 50%</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Simple Blog</p>
+  </footer>
+</body>
+</html>
